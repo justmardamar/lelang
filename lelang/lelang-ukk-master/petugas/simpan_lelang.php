@@ -6,7 +6,7 @@ include '../koneksi.php';
 $id_barang = $_POST['id_barang'];
 $tgl_lelang = date('Y-m-d');
 $id_petugas = $_POST['id_petugas'];
-$harga_akhir = $_POST['harga_akhir'];
+$harga_akhir = number_format($_POST['harga_akhir']);
 
 // menginput data ke database
 // mysqli_query($koneksi,"INSERT INTO tb_lelang VALUES('','$id_barang','$tgl_lelang','','','$id_petugas','')");

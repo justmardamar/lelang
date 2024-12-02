@@ -83,11 +83,7 @@ include '../layout/navbar_masyarakat.php';
                                 <label>Nominal Tawaran</label>
                                 <input type="text" name="id_user" value="<?php echo $d_tb_masyarakat['id_user']; ?>" hidden>
                                 <input type="number" class="form-control" name="penawaran_barang" min="<?= $tb_lelang['harga_akhir'] ?>" required placeholder="Silahkan Masukan Tawaran Anda ...">
-                                <?php if(!number_format($tb_lelang['harga_akhir'])){
-                                  echo "-";
-                                }else{
-                                  echo "<span class='text-italic'>Nominal tidak boleh kurang dari Rp." . number_format($tb_lelang['harga_akhir']) ."</span>";
-                                }?>
+                                <span class="text-italic">Nominal tidak boleh kurang dari Rp. <?= number_format($tb_lelang['harga_akhir']); ?></span>
                               </div>
                             <?php } ?>
                           </div>
