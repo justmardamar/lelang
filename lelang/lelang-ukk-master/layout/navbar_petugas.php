@@ -25,10 +25,6 @@ if ($_SESSION['id_level'] == "") {
                     <li class="nav-item">
                         <a href="index.php" class="nav-link">Home</a>
                     </li>
-                    <!-- Menu Khusus Petugas dan Admin -->
-                    <li class="nav-item">
-                        <a href="barang.php" class="nav-link">Pendataan Barang</a>
-                    </li>
                     <!-- Menu Khusus admin -->
                     <li class="nav-item">
                         <a href="petugas.php" class="nav-link">Data Petugas</a>
